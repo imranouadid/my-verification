@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Business — Business Verification</title>
+  <meta name="description" content="Official business info page for Personal Business managed by Imrane Ouadid. Contact, address, ownership statement, and links." />
+  <meta name="robots" content="index,follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0e14; --card:#121826; --muted:#9aa4b2; --text:#e6edf3; --accent:#78d3ff; --ring:#3b82f6; --ok:#22c55e; --warn:#f59e0b;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji"; background: var(--bg); color: var(--text); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 980px; margin: 0 auto; padding: 32px 20px 64px; }
+    header { display:flex; align-items:center; gap:16px; margin-bottom: 24px; }
+    .logo { width:52px; height:52px; border-radius:14px; overflow:hidden; background:#1f2937; display:grid; place-items:center; font-weight:800; letter-spacing:.5px; }
+    .brand h1 { font-size: clamp(22px, 3vw, 32px); margin:0; }
+    .brand p { margin:6px 0 0; color: var(--muted); }
+    .card { background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01)); border: 1px solid rgba(255,255,255,.08); border-radius: 18px; padding: 20px; }
+    .grid { display:grid; gap:16px; grid-template-columns: 1fr; }
+    @media (min-width: 820px){ .grid{ grid-template-columns: 2fr 1.2fr; } }
+    .section h2 { font-size: 18px; margin:0 0 10px; letter-spacing:.3px; }
+    .kv { display:grid; grid-template-columns: 140px 1fr; gap:8px 14px; }
+    .kv div { padding: 8px 0; border-bottom: 1px dashed rgba(255,255,255,.08); }
+    .kv .k { color: var(--muted); }
+    .notice { font-size: 14px; color: var(--muted); margin-top:8px; }
+    .badges { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+    .badge { font-size:12px; padding:6px 10px; border:1px solid rgba(255,255,255,.12); border-radius:999px; color:var(--muted); }
+    .owner { display:flex; gap:16px; align-items:center; }
+    .owner img { width:84px; height:84px; border-radius:14px; object-fit:cover; border:1px solid rgba(255,255,255,.12); }
+    .verify-list { margin: 10px 0 0 0; padding:0 0 0 18px; color: var(--muted); }
+    footer { margin-top: 36px; display:flex; justify-content:space-between; align-items:center; color: var(--muted); font-size: 13px; }
+    .cta { display:inline-flex; align-items:center; gap:10px; margin-top:12px; }
+    .btn { display:inline-block; background: var(--ring); color:white; padding:10px 14px; border-radius:10px; font-weight:600; box-shadow: 0 8px 24px rgba(59,130,246,.25); border:0; }
+    .btn.secondary { background: transparent; color: var(--accent); border:1px solid rgba(120,211,255,.4); }
+    .pill-ok { color: #10b981; font-weight:700; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size:12px; }
+    .hl { color: var(--accent); }
+    .check { color: var(--ok); }
+    .warn { color: var(--warn); }
+    .divider { height:1px; background: rgba(255,255,255,.08); margin: 16px 0; }
+    .links a { margin-right: 14px; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Personal Business",
+    "url": "https://example.com/",
+    "logo": "https://example.com/logo.png",
+    "email": "hello@frenchbulldogtribe.com",
+    "sameAs": [
+      "https://www.instagram.com/frenchbulldogtribe"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "MA"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Imrane Ouadid",
+      "jobTitle": "Owner"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">FBT</div>
+      <div class="brand">
+        <h1>Personal Business <span class="badge">Individual</span></h1>
+        <p>Official business info page for verification & compliance.</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section class="card section">
+        <h2>Business Details</h2>
+        <div class="kv">
+          <div class="k">Legal Owner</div>
+          <div><strong>Imrane Ouadid</strong> <span class="badge">Owner</span></div>
+
+          <div class="k">Company / Individual</div>
+          <div><strong>Personal Business</strong> <span class="badge">Services</span></div>
+
+          <div class="k">Email</div>
+          <div><a href="mailto:hello@frenchbulldogtribe.com">hello@frenchbulldogtribe.com</a></div>
+
+          <div class="k">Phone</div>
+          <div>+212 6 00 00 00 00 <!-- Replace with your number --></div>
+
+          <div class="k">Primary Address</div>
+          <div>Casablanca, Morocco <!-- Replace with full address to match Payoneer profile --></div>
+
+          <div class="k">Website</div>
+          <div><a href="https://example.com" rel="me">https://example.com</a> <!-- Replace with your domain if available --></div>
+
+          <div class="k"><!-- Social links removed per request --></a>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Personal Business</div>
+      <div>Last updated: <span id="lu"></span></div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById('lu').textContent = new Date().toLocaleDateString('en-GB', { year:'numeric', month:'long', day:'2-digit' });
+  </script>
+</body>
+</html>
